@@ -11,9 +11,7 @@ body {
 }
 img {
   padding: 15px;
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  width: 200px;
   display: block;
 }
 h6 {
@@ -25,4 +23,46 @@ li {
   margin: 10px auto;
   font-size: 20px;
   text-align: center;
+}
+.badge {
+  height: 20px;
+  width: 57px;
+  margin-bottom: 15px;
+  margin-left: 2px;
+  margin-right: 5px;
+  border: 1px solid black;
+  clear: both;
+  padding: 3px;
+  text-align: center;
+}
+
+.bg-danger {
+  background-color: red;
+}
+
+.bg-success {
+  background-color: green;
+}
+
+.bg-primary {
+  background-color: blue;
+}
+.price {
+  font-size: 23px;
+  vertical-align: bottom;
+  color: white;
+  text-decoration: none;
+  background-position: center;
+  display: block;
+  position: relative;
+}
+.col{
+  float:right;
+  width: 50%;
+}
+.col-sm-4 {
+  float: left;
+  width: 30%;
+  padding: 50 px;
+
 }
