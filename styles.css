@@ -29,13 +29,12 @@ body {
   border: 1px solid black;
   padding: 4px;
   text-align: center;
-
 }
 
 .product-title {
   font-size: 18px;
   font-weight: bold;
-  color: #ffee00
+  color: #ffee00;
 }
 .description {
   font-size: 16px;
@@ -61,6 +60,7 @@ body {
 .col-img img {
   width: 200px;
   height: auto;
+  background-color: white;
 }
 
 .text-box {
@@ -73,5 +73,4 @@ body {
 }
 .price-badge {
   flex: 1;
-
 }
