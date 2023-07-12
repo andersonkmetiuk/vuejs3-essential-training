@@ -1,36 +1,31 @@
 <template>
-  <section class="container" id="app">
-    <div
-      v-for="item in products"
-      :key="item.id"
-      id="item-list"
-      class="row d-flex mb-3 align-items-center"
-    >
-      <template v-if="item.price <= Number(100)">
-        <div class="product-box">
-          <div class="col-img">
-            <img :src="item.image" :alt="item.name" />
-          </div>
-          <div class="text-box">
-            <h3 class="product-title">{{ item.name }}</h3>
-            <p class="description">{{ item.description }}</p>
-            <div class="price-badge">
-              <span class="badge bg-success" v-if="item.price >= 90"
-                >premier</span
-              >
-              <span
-                class="badge bg-primary"
-                v-else-if="item.price < 90 && item.price > 10"
-                >value</span
-              >
-              <span class="badge bg-danger" v-else>sale</span>
-              <span class="item-price">${{ item.price }}</span>
-            </div>
+  <div class="store-header"><h1>Vue js 3 Store</h1></div>
+  
+  <div v-for="item in products" :key="item.id" id="item-list" class="row d-flex mb-3 align-items-center">
+    <template v-if="item.price <= Number(max)">
+      <div class="product-box">
+        <div class="col-img">
+          <img :src="item.image" :alt="item.name" />
+        </div>
+        <div class="text-box">
+          <h3 class="product-title">{{ item.name }}</h3>
+          <p class="description">{{ item.description }}</p>
+          <div class="price-badge">
+            <span class="badge bg-success" v-if="item.price >= 90"
+              >premier</span
+            >
+            <span
+              class="badge bg-primary"
+              v-else-if="item.price < 90 && item.price > 10"
+              >value</span
+            >
+            <span class="badge bg-danger" v-else>sale</span>
+            <span class="item-price">${{ item.price }}</span>
           </div>
         </div>
-      </template>
-    </div>
-  </section>
+      </div>
+    </template>
+  </div>
 </template>
 
 <script>

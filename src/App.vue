@@ -1,22 +1,16 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import Menu from './components/Menu.vue'
-
+import { RouterLink, RouterView } from "vue-router";
+import Menu from "./components/Menu.vue";
 </script>
 
 <template>
   <header>
-    <h1>Vue js 3 Store</h1>
-
-    <Menu />
-
     <div class="wrapper">
-
+      <Menu />
     </div>
   </header>
 
   <RouterView />
-
 </template>
 
 <style scoped>
