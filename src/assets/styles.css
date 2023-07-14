@@ -74,3 +74,43 @@ body {
 .price-badge {
   flex: 1;
 }
+
+.home-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -210px;
+  font-size: 50px;
+}
+
+.about-view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -210px;
+  font-size: 50px;
+}
+
+.home-select {
+  padding: 2px;
+  text-align: center;
+}
+.about-select {
+  padding: 2px;
+  text-align: center;
+}
+.store-select {
+  padding: 2px;
+  text-align: center;
+}
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  font-size: 30px;
+  margin-left: 310%;
+}
+
